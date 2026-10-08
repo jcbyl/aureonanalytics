@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aureon Analytics — Analytical Testing Laboratory, Puerto Rico</title>
+<meta name="description" content="Independent analytical testing laboratory serving Puerto Rico — environmental, agricultural, and industrial sample analysis with certified methodology and defensible data.">
+<link rel="canonical" href="https://aureonanalytics.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aureon Analytics — Analytical Testing Laboratory">
+<meta property="og:description" content="Independent analytical testing laboratory serving Puerto Rico — environmental, agricultural, and industrial sample analysis.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%234A8DB7'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='26' font-weight='400' fill='%23FCFBF7'%3EAa%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+::selection{background:#4A8DB7;color:#fff}
+html{scroll-behavior:smooth;background:#FCFBF7}
+body{font-family:'DM Sans',sans-serif;background:#FCFBF7;color:#333;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:root{
+--gold:#BFA958;--gold-light:#D4C06A;--gold-dim:rgba(191,169,88,.08);--gold-border:rgba(191,169,88,.15);
+--green:#3A8F65;--blue:#4A8DB7;--blue-light:#64B5F6;--blue-dim:rgba(74,141,183,.08);--blue-border:rgba(74,141,183,.2);
+--copper:#C27840;--red:#C0392B;
+--bg:#FCFBF7;--bg-alt:#F5F3ED;--card:#fff;
+--text:#1A1A1A;--text-mid:#555;--text-light:#888;--text-muted:#AAA;
+--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',sans-serif;--mono:'Geist Mono',monospace;
+--mx:1200px;--pad:56px;
+}
+.mx{max-width:var(--mx);margin:0 auto;padding:0 var(--pad)}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.lbl{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:20px}
+.sh{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,3.2rem);font-weight:400;letter-spacing:-1.5px;line-height:.95;color:var(--text)}
+.sh em{font-style:italic;color:var(--blue)}
+.sd{font-size:18px;color:var(--text-mid);line-height:1.8;max-width:600px;margin-top:16px}
+.btn-p{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:16px 36px;background:var(--blue);color:#fff;text-decoration:none;border:none;cursor:pointer;transition:all .2s;display:inline-block}
+.btn-p:hover{background:var(--blue-light)}
+.btn-s{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:15px 36px;border:1.5px solid var(--blue);color:var(--blue);text-decoration:none;background:transparent;cursor:pointer;transition:all .2s;display:inline-block}
+.btn-s:hover{background:var(--blue);color:#fff}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(26,26,26,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(74,141,183,.25);transition:all .4s}
+nav.at-top{background:rgba(26,26,26,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid transparent}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:0 var(--pad);height:72px;max-width:calc(var(--mx) + var(--pad)*2);margin:0 auto}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-icon{width:46px;height:46px;position:relative}
+.ni-ring{position:absolute;border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;border:1.5px solid rgba(74,141,183,.6)}
+.ni-aa{position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);font-family:var(--serif);font-size:17px;color:#F5F3ED}
+.ni-dot{position:absolute;border-radius:50%;width:6px;height:6px}
+.nav-logo-text{font-family:var(--serif);font-size:24px;font-weight:400;letter-spacing:-.5px;color:#F5F3ED}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(245,243,237,.5);text-decoration:none;transition:color .4s}
+.nav-links a:hover{color:var(--blue-light)}
+.nav-cta{background:var(--blue)!important;color:#fff!important;padding:12px 24px!important;transition:all .2s!important}
+.nav-cta:hover{background:var(--blue-light)!important}
+.hero{padding:190px 0 120px;position:relative;overflow:hidden;background:#1A1A1A}
+.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:800px;height:800px;background:radial-gradient(circle,rgba(74,141,183,.14) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(to bottom,transparent,#FCFBF7);pointer-events:none;z-index:2}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;position:relative;z-index:1}
+.hero h1{font-family:var(--serif);font-size:clamp(3rem,5.5vw,4.75rem);font-weight:400;letter-spacing:-3px;line-height:.9;color:#F5F3ED}
+.hero h1 em{font-style:italic;color:var(--blue-light)}
+.hero-tag{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--blue-light);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.hero-tag::before{content:'';width:32px;height:1px;background:var(--blue-light)}
+.hero-p{font-size:19px;color:rgba(245,243,237,.6);margin-top:20px;line-height:1.8;max-width:480px}
+.hero-ctas{display:flex;gap:12px;margin-top:36px}
+.hero .btn-s{border-color:rgba(245,243,237,.3);color:rgba(245,243,237,.7)}
+.hero .btn-s:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.hero-orb{width:100%;max-width:420px;aspect-ratio:1;position:relative;margin:0 auto}
+.ho-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(74,141,183,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(74,141,183,.05) 1px,transparent 1px);background-size:20% 20%}
+.ho-nuc{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:3}
+.ho-nuc-l{font-family:var(--serif);font-size:88px;letter-spacing:-4px;line-height:1;color:#F5F3ED}
+.ho-nuc-name{font-family:var(--serif);font-size:16px;letter-spacing:-.3px;color:rgba(245,243,237,.6);margin-top:2px}
+.ho-nuc-name .nuc-aureon{color:var(--blue-light)}
+.ho-nuc-s{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--text-muted);margin-top:1px}
+.ring1{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70%;aspect-ratio:1;border:1.5px solid rgba(74,141,183,.3);border-radius:50%}
+.ring2{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;aspect-ratio:1;border:1px solid rgba(74,141,183,.15);border-radius:50%}
+.spin1{animation:os 30s linear infinite}
+@keyframes os{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+.ho-el{position:absolute;top:50%;left:50%;z-index:4;text-align:center;margin:-7px 0 0 -7px}
+.ho-el-d{width:14px;height:14px;border-radius:50%;background:var(--blue-light);box-shadow:0 0 20px rgba(100,181,246,.6)}
+.orbit-el1{--r:147px;animation:oe1 16s linear infinite}
+.orbit-el2{--r:189px;animation:oe2 22s linear infinite}
+.orbit-el3{--r:147px;animation:oe3 28s linear infinite}
+@keyframes oe1{0%{transform:rotate(0deg) translateX(var(--r,147px)) rotate(0deg)}100%{transform:rotate(360deg) translateX(var(--r,147px)) rotate(-360deg)}}
+@keyframes oe2{0%{transform:rotate(120deg) translateX(var(--r,189px)) rotate(-120deg)}100%{transform:rotate(480deg) translateX(var(--r,189px)) rotate(-480deg)}}
+@keyframes oe3{0%{transform:rotate(240deg) translateX(var(--r,147px)) rotate(-240deg)}100%{transform:rotate(600deg) translateX(var(--r,147px)) rotate(-600deg)}}
+section{padding:110px 0}
+.sec-alt{background:var(--bg-alt)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.svc{background:var(--card);border:1px solid var(--border-light,#EDE9E4);padding:36px;transition:all .3s;position:relative;overflow:hidden}
+.svc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.svc:hover::before{transform:scaleX(1)}
+.svc:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(74,141,183,.12)}
+.svc-ic{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid var(--blue-border);background:var(--blue-dim);margin-bottom:20px;border-radius:50%}
+.svc h3{font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:-.5px;color:var(--text);margin-bottom:10px}
+.svc p{font-size:15px;color:var(--text-mid);line-height:1.7}
+.svc ul{margin-top:14px;list-style:none}
+.svc li{font-family:var(--mono);font-size:11.5px;letter-spacing:.5px;color:var(--text-light);padding:6px 0;border-bottom:1px solid rgba(74,141,183,.08)}
+.svc li::before{content:'—';color:var(--blue);margin-right:8px}
+.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px}
+.cap{background:var(--card);border:1px solid #EDE9E4;padding:30px}
+.cap-n{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:2px;color:var(--blue);margin-bottom:12px}
+.cap h4{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--text);margin-bottom:8px}
+.cap p{font-size:14px;color:var(--text-mid);line-height:1.7}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;border:1px solid #EDE9E4;background:var(--card)}
+.proc-step{padding:36px 28px;border-right:1px solid #EDE9E4;position:relative}
+.proc-step:last-child{border-right:none}
+.proc-n{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:2px;color:var(--blue);margin-bottom:16px}
+.proc-step h4{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--text);margin-bottom:8px}
+.proc-step p{font-size:14px;color:var(--text-mid);line-height:1.7}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.stat-row{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:40px}
+.stat{border-left:2px solid var(--blue);padding-left:20px}
+.stat-n{font-family:var(--serif);font-size:36px;letter-spacing:-1.5px;color:var(--text);line-height:1}
+.stat-n span{color:var(--blue)}
+.stat-l{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-top:6px}
+.cta{background:#1A1A1A;padding:110px 0;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-30%;left:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(74,141,183,.12) 0%,transparent 65%);pointer-events:none}
+.cta-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center;position:relative;z-index:1}
+.cta h2{font-family:var(--serif);font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:400;letter-spacing:-2px;line-height:1;color:#F5F3ED}
+.cta h2 em{font-style:italic;color:var(--blue-light)}
+.cta p{color:rgba(245,243,237,.6);margin-top:16px;font-size:17px;line-height:1.8}
+.cta-card{background:rgba(255,255,255,.04);border:1px solid rgba(74,141,183,.25);padding:40px;backdrop-filter:blur(10px)}
+.cta-card h3{font-family:var(--serif);font-size:24px;color:#F5F3ED;font-weight:400;margin-bottom:24px}
+.cta-row{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(74,141,183,.12)}
+.cta-row:last-child{border-bottom:none}
+.cta-k{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);width:90px;flex-shrink:0}
+.cta-v{font-size:15px;color:rgba(245,243,237,.85)}
+.cta-v a{color:var(--blue-light);text-decoration:none}
+.cta-v a:hover{text-decoration:underline}
+footer{background:#141210;padding:48px 0;border-top:1px solid rgba(191,169,88,.15)}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot-logo{font-family:var(--serif);font-size:18px;color:#F5F3ED;letter-spacing:-.5px}
+.foot-logo .nuc-aureon{color:var(--blue-light)}
+.foot-links{display:flex;gap:24px}
+.foot-links a{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,243,237,.4);text-decoration:none}
+.foot-links a:hover{color:var(--blue-light)}
+.foot-copy{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:rgba(245,243,237,.3)}
+@media(max-width:1000px){
+:root{--pad:24px}
+.hero-grid{grid-template-columns:1fr;gap:48px}
+.hero-orb{max-width:340px}
+.orbit-el1{--r:119px}
+.orbit-el2{--r:153px}
+.orbit-el3{--r:119px}
+.svc-grid{grid-template-columns:1fr}
+.cap-grid{grid-template-columns:repeat(2,1fr)}
+.process{grid-template-columns:repeat(2,1fr)}
+.proc-step:nth-child(2){border-right:none}
+.about-grid{grid-template-columns:1fr;gap:48px}
+.cta-grid{grid-template-columns:1fr;gap:48px}
+.nav-links a:not(.nav-cta){display:none}
+section{padding:80px 0}
+.hero{padding:150px 0 90px}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+<div class="nav-inner">
+<a class="nav-logo" href="/" aria-label="Aureon Analytics">
+<div class="nav-icon"><div class="ni-ring"></div><div class="ni-aa">Aa</div><div class="ni-dot" style="background:var(--blue-light);top:9px;right:8px"></div></div>
+<div class="nav-logo-text">Aureon <span style="color:var(--blue-light)">Analytics</span></div>
+</a>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#capabilities">Capabilities</a>
+<a href="#process">Process</a>
+<a href="#about">About</a>
+<a class="nav-cta" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="mx hero-grid">
+<div>
+<div class="hero-tag">Analytical Testing Laboratory · Puerto Rico</div>
+<h1>Defensible data,<br>precise <em>analysis</em>.</h1>
+<p class="hero-p">Aureon Analytics is an independent analytical testing laboratory serving Puerto Rico's environmental, agricultural, and industrial sectors. Certified methodology, rigorous quality control, and reports you can stand behind.</p>
+<div class="hero-ctas">
+<a class="btn-p" href="#services">Our Services</a>
+<a class="btn-s" href="#contact">Get in Touch</a>
+</div>
+</div>
+<div class="hero-orb" aria-label="Aureon Analytics mark">
+<div class="ho-grid"></div>
+<div class="ring1 spin1"><div class="ho-el orbit-el1" style="top:50%;left:50%;margin:-7px 0 0 -7px;position:absolute;transform:none;animation:none"><div class="ho-el-d"></div></div></div>
+<div class="ring2"><div class="ho-el orbit-el2" style="position:absolute;transform:none;animation:none;top:0;left:50%;margin:-7px 0 0 -7px"><div class="ho-el-d" style="background:var(--gold);box-shadow:0 0 20px rgba(191,169,88,.6)"></div></div></div>
+<div class="ho-nuc">
+<div class="ho-nuc-l">Aa</div>
+<div class="ho-nuc-name"><span class="nuc-aureon">Aureon</span> Analytics</div>
+<div class="ho-nuc-s">Testing · Data · Certainty</div>
+</div>
+</div>
+</div>
+</header>
+
+<section id="services">
+<div class="mx">
+<div class="lbl">Core Services</div>
+<h2 class="sh">What we <em>test</em></h2>
+<p class="sd">Full-service analytical testing across environmental, agricultural, and industrial sample types — from routine compliance panels to custom method development.</p>
+<div class="svc-grid">
+<div class="svc">
+<div class="svc-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C6.7 2 4 4.7 4 8c0 5.2 6 10 6 10s6-4.8 6-10c0-3.3-2.7-6-6-6z" stroke="#4A8DB7" stroke-width="1.5"/><circle cx="10" cy="8" r="2.2" stroke="#4A8DB7" stroke-width="1.5"/></svg></div>
+<h3>Environmental Analysis</h3>
+<p>Water, soil, and air testing for regulatory compliance, site assessment, and remediation monitoring.</p>
+<ul>
+<li>Drinking &amp; wastewater panels</li>
+<li>Soil &amp; solid waste characterization</li>
+<li>Heavy metals (ICP-MS)</li>
+<li>Microbiology &amp; coliform testing</li>
+</ul>
+</div>
+<div class="svc">
+<div class="svc-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 2v6.5L3.6 15a2.5 2.5 0 002.2 3.7h8.4a2.5 2.5 0 002.2-3.7L13 8.5V2" stroke="#4A8DB7" stroke-width="1.5"/><path d="M6 2h8" stroke="#4A8DB7" stroke-width="1.5"/><path d="M5.2 12.5h9.6" stroke="#4A8DB7" stroke-width="1.5"/></svg></div>
+<h3>Chemical &amp; Materials</h3>
+<p>Composition, contamination, and quality analysis for industrial and commercial clients.</p>
+<ul>
+<li>Potency &amp; compositional analysis</li>
+<li>Residual solvents (GC-MS)</li>
+<li>Pesticide residue panels</li>
+<li>Product quality &amp; stability</li>
+</ul>
+</div>
+<div class="svc">
+<div class="svc-ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 17V9M8.5 17V4M14 17v-7" stroke="#4A8DB7" stroke-width="1.5"/><circle cx="3" cy="6.5" r="1.6" stroke="#4A8DB7" stroke-width="1.5"/><circle cx="14" cy="6" r="1.6" stroke="#4A8DB7" stroke-width="1.5"/><path d="M17 17H1" stroke="#4A8DB7" stroke-width="1.5"/></svg></div>
+<h3>Data &amp; Reporting</h3>
+<p>Certificates of Analysis and defensible reporting built for regulators, courts, and procurement.</p>
+<ul>
+<li>Certificate of Analysis issuance</li>
+<li>Chain-of-custody documentation</li>
+<li>Regulatory submission support</li>
+<li>Custom &amp; bulk reporting</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="capabilities" class="sec-alt">
+<div class="mx">
+<div class="lbl">Capabilities</div>
+<h2 class="sh">Instrumentation &amp; <em>methods</em></h2>
+<p class="sd">Modern analytical instrumentation operated under documented quality systems.</p>
+<div class="cap-grid">
+<div class="cap">
+<div class="cap-n">CHROM</div>
+<h4>Chromatography</h4>
+<p>HPLC and GC-MS platforms for separation, identification, and quantification of target analytes.</p>
+</div>
+<div class="cap">
+<div class="cap-n">SPEC</div>
+<h4>Spectrometry</h4>
+<p>ICP-MS and atomic spectroscopy for trace metals and elemental analysis at regulatory limits.</p>
+</div>
+<div class="cap">
+<div class="cap-n">MICRO</div>
+<h4>Microbiology</h4>
+<p>Culture and molecular methods for microbial contamination and pathogen screening.</p>
+</div>
+<div class="cap">
+<div class="cap-n">WET</div>
+<h4>Wet Chemistry</h4>
+<p>Classical and automated wet-chemical methods for routine environmental parameters.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="mx">
+<div class="lbl">How It Works</div>
+<h2 class="sh">From sample to <em>certainty</em></h2>
+<div class="process">
+<div class="proc-step">
+<div class="proc-n">01</div>
+<h4>Sample Intake</h4>
+<p>Documented chain of custody from the moment your sample arrives. Proper preservation and storage verified at intake.</p>
+</div>
+<div class="proc-step">
+<div class="proc-n">02</div>
+<h4>Analysis</h4>
+<p>Validated methods run on calibrated instrumentation with batch quality controls and blanks.</p>
+</div>
+<div class="proc-step">
+<div class="proc-n">03</div>
+<h4>QA Review</h4>
+<p>Second-analyst data review against acceptance criteria before any result leaves the lab.</p>
+</div>
+<div class="proc-step">
+<div class="proc-n">04</div>
+<h4>Certificate of Analysis</h4>
+<p>Defensible, signed reporting delivered in the format your regulator or counterparty requires.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about" class="sec-alt">
+<div class="mx about-grid">
+<div>
+<div class="lbl">The Laboratory</div>
+<h2 class="sh">An independent lab, <em>built for PR</em></h2>
+<p class="sd" style="max-width:none">Aureon Analytics is the analytical testing division of <strong>Aureon Scientific Holdings</strong>, a Puerto Rico life-science infrastructure holding company. We exist because the island's growers, producers, and projects need testing capacity that is close, credible, and independent — data that holds up to regulators and counterparties alike.</p>
+<p class="sd" style="max-width:none">Our practice spans the environmental, agricultural, and industrial sectors. As the laboratory scales, our scope and certifications grow with it — every method validated, every result reviewed.</p>
+</div>
+<div>
+<div class="stat-row">
+<div class="stat">
+<div class="stat-n"><span>3</span></div>
+<div class="stat-l">Practice Sectors</div>
+</div>
+<div class="stat">
+<div class="stat-n"><span>EN · ES</span></div>
+<div class="stat-l">Bilingual Reporting</div>
+</div>
+<div class="stat">
+<div class="stat-n"><span>PR</span></div>
+<div class="stat-l">Puerto Rico Based</div>
+</div>
+<div class="stat">
+<div class="stat-n"><span>CoA</span></div>
+<div class="stat-l">Certified Reporting</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="cta">
+<div class="mx cta-grid">
+<div>
+<div class="lbl" style="color:var(--blue-light)">Contact</div>
+<h2>Send us your <em>sample</em>.</h2>
+<p>Whether you need routine compliance testing or a custom analytical program, the conversation starts here. Tell us what you're testing for and we'll scope the work.</p>
+</div>
+<div class="cta-card">
+<h3>Aureon Analytics</h3>
+<div class="cta-row"><div class="cta-k">Email</div><div class="cta-v"><a href="mailto:info@aureonanalytics.com">info@aureonanalytics.com</a></div></div>
+<div class="cta-row"><div class="cta-k">Location</div><div class="cta-v">Puerto Rico</div></div>
+<div class="cta-row"><div class="cta-k">Group</div><div class="cta-v"><a href="https://aureonscientificgroup.com/" target="_blank" rel="noopener">Aureon Scientific Holdings</a></div></div>
+<div class="cta-row"><div class="cta-k">Hours</div><div class="cta-v">Mon – Fri, 8:00 – 17:00 AST</div></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="mx foot-inner">
+<div class="foot-logo"><span class="nuc-aureon">Aureon</span> Analytics</div>
+<div class="foot-links">
+<a href="https://aureonscientificgroup.com/" target="_blank" rel="noopener">Holdings</a>
+<a href="https://plantera.bio" target="_blank" rel="noopener">Plantera</a>
+<a href="https://aureonenviro.com" target="_blank" rel="noopener">Environmental</a>
+</div>
+<div class="foot-copy">© 2026 AUREON ANALYTICS</div>
+</div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('at-top',scrollY<40)},{passive:true});
+nav.classList.add('at-top');
+</script>
+</body>
+</html>
